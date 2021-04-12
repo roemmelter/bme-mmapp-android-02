@@ -5,12 +5,16 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -22,11 +26,15 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private final String PACKAGE_NAME_BASE = "org.mmapp.";
+    private final String PACKAGE_BASE = "org.mmapp.";
+    private final String PACKAGE_UIAPPLICATION = "uiapplication.";
     private final String[] ACTIVITY_LIST = {
-            PACKAGE_NAME_BASE + "uiapplication." + "ButtonActivity",
-            PACKAGE_NAME_BASE + "uiapplication." + "DialogActivity",
-            PACKAGE_NAME_BASE + "uiapplication." + "AboutActivity"
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "AboutActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "BorderLayoutActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "ButtonActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "CalculatorActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "DialogActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "MenuActivity",
     };
 
     @Override
@@ -46,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(ll);
     }
+
 
     protected Button createButtonForActivity(Context ctx, String activity) {
         String btnLabel = activity.substring(activity.lastIndexOf(".")+1);
