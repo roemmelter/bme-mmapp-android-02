@@ -19,22 +19,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * MIT License (http://choosealicense.com/licenses/mit/)
- *
- * MainActivity
+ * <p><br>
+ * <b>MainActivity</b><br>
+ * The activity creates a button for each Activity in ACTIVITY_LIST.
+ * The pressed button starts on click the labeled activity.
+ * </p><br>
  *
  * @author Erik Roemmelt
  */
 public class MainActivity extends AppCompatActivity {
 
-    private final String PACKAGE_BASE = "org.mmapp.";
-    private final String PACKAGE_UIAPPLICATION = "uiapplication.";
+    private final String PACKAGE_BASE = "org.mmapp";
+    private final String PACKAGE_UIAPPLICATION = ".uiapplication";
     private final String[] ACTIVITY_LIST = {
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "AboutActivity",
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "BorderLayoutActivity",
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "ButtonActivity",
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "CalculatorActivity",
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "DialogActivity",
-            PACKAGE_BASE + PACKAGE_UIAPPLICATION + "MenuActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".AboutActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".BorderLayoutActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".ButtonActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".CalculatorActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".DialogActivity",
+            PACKAGE_BASE + PACKAGE_UIAPPLICATION + ".MenuActivity",
     };
 
     @Override
