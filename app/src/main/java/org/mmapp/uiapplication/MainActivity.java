@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private final String[] ACTIVITY_LIST = {
             PACKAGE_NAME_BASE + "uiapplication." + "ButtonActivity",
             PACKAGE_NAME_BASE + "uiapplication." + "DialogActivity",
-            PACKAGE_NAME_BASE + "uiapplication." + "InfoActivity"
+            PACKAGE_NAME_BASE + "uiapplication." + "AboutActivity"
     };
 
     @Override
