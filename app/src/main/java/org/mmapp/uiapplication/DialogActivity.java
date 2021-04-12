@@ -34,7 +34,8 @@ public class DialogActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(((Dialog) dialog).getContext(),
-                                       "Let's start the game, " + which + " will start.",
+                                       "Let's start the game, " + who_starts[which] + " will " +
+                            "start.",
                                        Toast.LENGTH_LONG).show();
                     }
                 }).show();
